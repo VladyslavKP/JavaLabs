@@ -1,3 +1,7 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class AllFunc {
     //1
     public static int[] ArithmeticProgression1(int N, int A, int D) {
@@ -76,6 +80,24 @@ public class AllFunc {
         } else {
             System.out.println("Друге число не може бути нуль.");
             return Double.NaN;
+        }
+    }
+    //7
+    public static void generateProgressionFile(String fileName, double A, double D) {
+        try {
+            FileWriter fileWriter = new FileWriter(fileName);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+
+            for (int i = 0; i < 10; i++) {
+                double term = A + i * D;
+                printWriter.println(term);
+            }
+
+            printWriter.close();
+            System.out.println("Прогресія була записана в файл " + fileName);
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.err.println("Помилка при роботі з файлом.");
         }
     }
 }

@@ -44,6 +44,10 @@ public class Main {
         System.out.println("Різниця квадратів: " + differenceOfSquares);
         System.out.println("Добуток квадратів: " + productOfSquares);
         System.out.println("Частка квадратів: " + quotientOfSquares);
+
+        System.out.println("///////////////////:");
+
+        AllFunc.generateProgressionFile("progression.txt", 3, 2);
     }
 
     public static void printArray(int[] arr) {
