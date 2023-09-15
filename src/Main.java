@@ -16,7 +16,17 @@ public class Main {
 
         System.out.println("Площа прямокутника: " + area);
         System.out.println("Периметр прямокутника: " + perimeter);
+
+        System.out.println("///////////////////:");
+        int A = 3;
+        boolean isEven = AllFunc.isEvenNumber(A);
+        if (isEven) {
+            System.out.println(A + " є парним числом.");
+        } else {
+            System.out.println(A + " не є парним числом.");
+        }
     }
+
 
     public static void printArray(int[] arr) {
         for (int value : arr) {

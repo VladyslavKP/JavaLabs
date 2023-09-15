@@ -23,5 +23,8 @@ public class AllFunc {
     public static double calculatePerimeter(double a, double b) {
         return 2 * (a + b);
     }
-
+    //4
+    public static boolean isEvenNumber(int number) {
+        return number % 2 == 0;
+    }
 }
