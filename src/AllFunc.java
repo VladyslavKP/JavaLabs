@@ -16,5 +16,12 @@ public class AllFunc {
         return progression;
     }
     //3
-    
+     public static double calculateArea(double a, double b) {
+        return a * b;
+    }
+
+    public static double calculatePerimeter(double a, double b) {
+        return 2 * (a + b);
+    }
+
 }

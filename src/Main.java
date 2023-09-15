@@ -6,9 +6,16 @@ public class Main {
 
         System.out.println("Перший метод:");
         printArray(progression1);
-
         System.out.println("Другий метод:");
         printArray(progression2);
+
+        System.out.println("///////////////////:");
+
+        double area = AllFunc.calculateArea(5, 5);
+        double perimeter = AllFunc.calculatePerimeter(3, 6);
+
+        System.out.println("Площа прямокутника: " + area);
+        System.out.println("Периметр прямокутника: " + perimeter);
     }
 
     public static void printArray(int[] arr) {
