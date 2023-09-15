@@ -31,7 +31,19 @@ public class Main {
         String season = AllFunc.getSeason(monthNumber);
 
         System.out.println("Час року для місяця номер " + monthNumber + ": " + season);
+        System.out.println("///////////////////:");
+        double num1 = 5.0;
+        double num2 = 3.0;
 
+        double sumOfSquares = AllFunc.calculateSumOfSquares(num1, num2);
+        double differenceOfSquares = AllFunc.calculateDifferenceOfSquares(num1, num2);
+        double productOfSquares = AllFunc.calculateProductOfSquares(num1, num2);
+        double quotientOfSquares = AllFunc.calculateQuotientOfSquares(num1, num2);
+
+        System.out.println("Сума квадратів: " + sumOfSquares);
+        System.out.println("Різниця квадратів: " + differenceOfSquares);
+        System.out.println("Добуток квадратів: " + productOfSquares);
+        System.out.println("Частка квадратів: " + quotientOfSquares);
     }
 
     public static void printArray(int[] arr) {

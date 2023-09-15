@@ -57,4 +57,25 @@ public class AllFunc {
         }
         return season;
     }
+    //6
+    public static double calculateSumOfSquares(double num1, double num2) {
+        return num1 * num1 + num2 * num2;
+    }
+
+    public static double calculateDifferenceOfSquares(double num1, double num2) {
+        return num1 * num1 - num2 * num2;
+    }
+
+    public static double calculateProductOfSquares(double num1, double num2) {
+        return num1 * num1 * num2 * num2;
+    }
+
+    public static double calculateQuotientOfSquares(double num1, double num2) {
+        if (num2 != 0) {
+            return (num1 * num1) / (num2 * num2);
+        } else {
+            System.out.println("ƒруге число не може бути нуль.");
+            return Double.NaN;
+        }
+    }
 }
