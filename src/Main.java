@@ -25,8 +25,14 @@ public class Main {
         } else {
             System.out.println(A + " не Ї парним числом.");
         }
-    }
+        System.out.println("///////////////////:");
+        int monthNumber = 9;
 
+        String season = AllFunc.getSeason(monthNumber);
+
+        System.out.println("„ас року дл€ м≥с€ц€ номер " + monthNumber + ": " + season);
+
+    }
 
     public static void printArray(int[] arr) {
         for (int value : arr) {
